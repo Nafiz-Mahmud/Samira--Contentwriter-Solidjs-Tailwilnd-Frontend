@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  @apply h-28  w-28;
+}
+
+.header_items {
+  @apply flex flex-col-reverse sm:flex-row min-h-[60vh];
+}
+
+.header_info {
+  flex: 1;
+  @apply py-12 flex flex-col gap-4 items-start justify-center pl-12 md:pl-16;
+}
+.header_info .header_title {
+  @apply text-4xl md:text-5xl lg:text-6xl text-blue-400 font-bold;
+}
+.header_info .header_cat {
+  @apply text-4xl mb-8 lg:mb-12 xl:mb-16;
+}
+button {
+  @apply border-double border-4 border-sky-500 rounded px-4 py-2 font-bold hover:bg-sky-100 hover:scale-105 transition duration-300;
+}
+.header_img {
+  flex: 1.2;
+  /* @apply; */
+}
+.header_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.about {
+  @apply bg-black text-white;
+}
+
+.about_items {
+  @apply p-[3rem] sm:p-[6rem] lg:p-[8rem] flex flex-col md:flex-row;
+}
+.about_img {
+  @apply flex-1 bg-gray-300;
+}
+.about_img img {
+  @apply object-cover;
+}
+
+.about_info {
+  @apply flex flex-col flex-1 pl-0 md:pl-8 lg:pl-12 pt-4;
+}
+.about_info .about_title {
+  @apply text-4xl mb-4 lg:mb-12;
+}
+.about_info .about_text {
+  @apply text-2xl;
+}
+
+.skill_ser {
+  @apply mt-16  mb-12;
+}
+
+.skill_title {
+  @apply flex mb-12 items-center justify-center text-4xl sm:text-6xl;
+}
+
+.skill_service {
+  @apply flex flex-col sm:flex-row  w-4/5 m-auto;
+}
+
+.skill {
+  @apply flex-1 mb-12 sm:mb-0 text-center;
+}
+
+.serv {
+  @apply flex-1 text-center;
+}
+
+.touch {
+  @apply flex flex-col gap-8 w-10/12 m-auto py-12;
+}
+
+.touch_title {
+  @apply text-5xl mb-8;
+}
+/* // */
+.review {
+  @apply bg-black text-white;
+}
+.review_main {
+  @apply w-10/12 m-auto py-16;
+}
+.review_title {
+  @apply text-4xl mb-12;
+}
+
+.reviews {
+}
+
+.card {
+  @apply border-double border-white border-4 px-8 py-12 text-center text-xl  sm:text-2xl lg:text-4xl mb-16;
+}
+
+.others {
+  @apply flex gap-4;
+}
+.one {
+  @apply flex-1;
+}
+.two {
+  @apply flex-1;
+}
